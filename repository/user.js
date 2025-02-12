@@ -7,3 +7,11 @@ exports.fetchUser = async (options) => {
 exports.createUser = async (options) => {
     return await User.create(options)
 };
+
+exports.fetchUserById = (options) => {
+    return User.findById(options)
+};
+
+exports.fetchUserByIdAndUpdate = (options) => {
+    return User.findByIdAndUpdate(options)
+};
